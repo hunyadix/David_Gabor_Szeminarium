@@ -1,0 +1,14 @@
+
+Feladat: Elliptikus flow meghatározása.
+
+Cél: 2 dimenziós hisztogram készítése az elliptikus flow mértékéről.
+
+Lépések:
+
+ - Loopolok v_2-n és FI-n, egyenként egymillió eseménnyel
+	 - Generálok 1 + v_z * cos( 2FI ) szerint eseményeket (n_particles alkalommal)
+	 - Megillesztem őket egy x + cos( FI_est ) függvénnyel
+	 - Megkeresem a cos függvény maximumát
+	 - A FI_est és a FI különbségének abszolútértékét befittelem egy hisztogramba
+ - A kétdimenziós hisztogramot skálázom egy-per-egymillióval, hogy relatív gyakoriságokat mutasson
+ - Az elliptikus flow megmutatja, hogy adott eseménynél mennyi az esemény 
